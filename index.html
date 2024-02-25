@@ -9,36 +9,71 @@
 </head>
 <body>
     <header>
-        <nav class="container">
-            <div class="logo">
-                <h1>TradeBoard</h1>
+        <div class="container">
+            <a href="index.html" class="logo">TradeBoard</a>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#leaderboard">Leaderboard</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth">
+                <a href="#signin" class="signin-btn">Sign In</a>
+                <a href="#signup" class="signup-btn">Sign Up</a>
             </div>
-            <ul class="navigation">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="leaderboard.html">Leaderboard</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        </div>
     </header>
     <main>
-        <section class="hero container">
-            <h2>Compete &amp; Excel</h2>
-            <p>Join our community and measure your trading skills against the best.</p>
-            <a href="#about" class="cta-button">Discover More</a>
+        <section class="hero">
+            <div class="container">
+                <h2>Compete & Excel</h2>
+                <p>Join our community and measure your trading skills against the best.</p>
+                <a href="#about" class="cta-button">Discover More</a>
+            </div>
         </section>
-        <section id="about" class="info-section container">
-            <h3>About Us</h3>
-            <p>TradeBoard is your platform to showcase trading prowess. Connect, compete, and climb the ranks to trading mastery.</p>
+        <section id="leaderboard" class="leaderboard">
+            <div class="container">
+                <h3>Current Leaderboard</h3>
+                <p class="update-time">Last Updated: <time datetime="2024-02-25T08:00">Today at 8:00 AM</time></p>
+                <!-- Leaderboard placeholder -->
+                <div class="leaderboard-placeholder">
+                    <p>Leaderboard data will be displayed here.</p>
+                </div>
+            </div>
         </section>
-        <section id="contact" class="info-section container">
-            <h3>Get in Touch</h3>
-            <!-- Contact form or information -->
+        <section id="about" class="info-section">
+            <div class="container">
+                <h3>About Us</h3>
+                <p>TradeBoard is your platform to showcase trading prowess. Connect, compete, and climb the ranks to trading mastery.</p>
+            </div>
+        </section>
+        <section id="contact" class="info-section">
+            <div class="container">
+                <h3>Get in Touch</h3>
+                <!-- Contact form or information -->
+            </div>
         </section>
     </main>
-    <footer class="container">
-        <p>&copy; 2024 TradeBoard. Trademarks and brands are the property of their respective owners.</p>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TradeBoard. Trademarks and brands are the property of their respective owners.</p>
+        </div>
     </footer>
+    <div id="signin" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form class="signin-form">
+                <h2>Sign In to Your Account</h2>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" class="signin-btn">Sign In</button>
+            </form>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
