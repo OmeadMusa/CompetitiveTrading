@@ -85,3 +85,25 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
+
+.table-container {
+    margin-top: 20px;
+    backdrop-filter: blur(5px);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #000;
+}
+
+thead th {
+    font-weight: bold;
+}
